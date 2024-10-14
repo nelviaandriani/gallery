@@ -1,0 +1,169 @@
+/* index.css */
+
+/* General Reset and Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f9f5; /* Soft off-white background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #28a745; /* Elegant dark green for header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    border-bottom: 3px solid #1e6d31; /* Accent on header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* Rounded edges */
+    background-color: #1e6d31;
+    transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1b5632; /* Darker hover effect */
+    color: #b2ffd8;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form input[type="text"] {
+    padding: 12px;
+    width: 55%;
+    max-width: 450px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for inputs */
+    outline: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background-color: #eef8ee; /* Light green on focus */
+}
+
+form button {
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-left: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #1f7e34;
+    transform: translateY(-2px); /* Slight elevation on hover */
+}
+
+.album-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.album-item {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Stronger shadow for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.album-item:hover {
+    transform: translateY(-10px); /* More noticeable hover effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.album-item h3 {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.album-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.album-item small {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.album-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.album-item a:hover {
+    background-color: #1f7e34;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for footer */
+    border-top: 3px solid #1e6d31;
+}
