@@ -1,0 +1,83 @@
+/* Reset beberapa gaya default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Font umum */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    padding: 20px; /* Ruang dalam */
+}
+
+/* Judul Halaman */
+h1 {
+    text-align: center; /* Pusatkan judul */
+    margin-bottom: 20px; /* Ruang bawah judul */
+    color: #2b572b; /* Warna judul */
+}
+
+/* Formulir */
+form {
+    max-width: 600px; /* Lebar maksimum untuk formulir */
+    margin: 0 auto; /* Pusatkan formulir */
+    background-color: white; /* Warna latar belakang formulir */
+    padding: 20px; /* Ruang dalam formulir */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+/* Label untuk input */
+label {
+    display: block; /* Tampilkan label sebagai blok */
+    margin-bottom: 5px; /* Ruang bawah label */
+    font-weight: bold; /* Tebal */
+}
+
+/* Input teks dan textarea */
+input[type="text"], textarea {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Ruang dalam */
+    margin-bottom: 15px; /* Ruang bawah input */
+    border: 1px solid #ccc; /* Garis batas */
+    border-radius: 4px; /* Sudut melengkung */
+    font-size: 16px; /* Ukuran font */
+}
+
+/* Tombol */
+button {
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    padding: 10px 15px; /* Ruang dalam tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    border-radius: 5px; /* Sudut melengkung tombol */
+    font-size: 16px; /* Ukuran font tombol */
+    transition: background-color 0.3s; /* Transisi warna latar belakang */
+}
+
+button:hover {
+    background-color: #218838; /* Warna latar belakang saat hover */
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    form {
+        padding: 15px; /* Ruang dalam formulir untuk layar kecil */
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran judul untuk layar kecil */
+    }
+
+    button {
+        padding: 8px 12px; /* Mengurangi padding pada tombol untuk layar kecil */
+        font-size: 14px; /* Mengurangi ukuran font tombol untuk layar kecil */
+    }
+
+    input[type="text"], textarea {
+        font-size: 14px; /* Mengurangi ukuran font untuk input dan textarea di layar kecil */
+    }
+}

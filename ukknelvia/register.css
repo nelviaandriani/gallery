@@ -1,0 +1,93 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for the form */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+    color: #4CAF50; /* Primary color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing between inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+}
+
+textarea {
+    resize: none; /* Prevent resizing of textarea */
+    height: 80px; /* Fixed height for the textarea */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.password-container {
+    display: flex; /* Use flex for the password field and toggle icon */
+    align-items: center; /* Center vertically */
+}
+
+.toggle-password {
+    cursor: pointer; /* Change cursor on hover */
+    margin-left: 10px; /* Space between input and icon */
+}
+
+button {
+    background-color: #4CAF50; /* Primary button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    width: 100%; /* Full width */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none; /* No underline */
+    color: #4CAF50; /* Link color */
+}
+
+a.button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
